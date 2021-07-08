@@ -1,0 +1,551 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor {
+    width: min(90%, 1400px);
+    margin: 0 auto;
+}
+
+.h-500 {
+    max-height: 500px;
+    height: 100%;
+}
+
+.bg-b {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid-2 {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    padding: 30px;
+}
+
+.redes {
+    display: block;
+}
+
+.yt,
+.tw,
+.fb,
+.ins {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.yt {
+    border-left: solid 3px rgb(247, 43, 43);
+}
+
+.yt a {
+    color: rgb(247, 43, 43) !important;
+}
+
+.tw {
+    border-left: solid 3px rgb(67, 221, 241);
+}
+
+.tw a {
+    color: rgb(67, 221, 241) !important;
+}
+
+.fb {
+    border-left: solid 3px rgb(65, 65, 192);
+}
+
+.fb a {
+    color: rgb(65, 65, 192) !important;
+}
+
+.ins {
+    border-left: solid 3px violet;
+}
+
+.ins a {
+    color: violet !important;
+}
+
+.yt:hover,
+.tw:hover,
+.fb:hover,
+.ins:hover {
+    transform: scale(1.1, 1.1);
+    transition: .5s ease-out;
+}
+
+.color-white {
+    color: white !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.copy {
+    grid-column: 1 / 4;
+    border-top: 1px white solid;
+}
+
+.center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .centrar-texto {
+        text-align: left;
+    }
+    .contactos,
+    .terminos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+ @media (max-width: 400px){
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contactos {
+        grid-column: 1 / 2;
+    }
+    
+    .terminos {
+        grid-column: 1 / 2;
+    }
+    
+    .redes {
+        grid-column: 1/ 2;
+    }
+}
+@media (min-width: 401px){
+    .contactos {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+    
+    .terminos {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+    
+    .redes {
+        grid-column: 1/ 4;
+    }
+    
+    .redes__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .contactos {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .terminos {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .redes {
+        grid-column: 3/ 4;
+    }
+    .redes__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.termino,
+.trabaja,
+.empresa,
+.email,
+.contacto,
+.libro {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-shadow: 0px 0px 4px #e1e1e1;
+}
+
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.card_grid--one {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card_grid--one:hover {
+    transform: scale(1.05, 1.05);
+    transition: .6s ease-in-out;
+}
+
+.border_img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card_grid--body {
+    padding: 10px;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.card_grid--footer {
+    padding: 10px;
+}
+
+@media (max-width: 400px){
+    .grid-2  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 410px){
+    .card_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px){
+    .card_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .paginacion__grid {
+        grid-column: 2 / 3;
+        display: grid;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .paginacion__grid {
+    grid-column: 2 / 3;
+    display: grid;
+    }
+
+}
+
+
+.boton {
+    border-top: 1px solid black;
+    padding: 5px 10px;
+}
+
+.imagen--logo {
+    width: 120px;
+    border-radius: 1rem;
+}
+
+.caja__texto {
+    display: grid;
+    gap: 10px;
+}
+
+.caja__texto input {
+    color: white;
+}
+
+.caja__texto textarea{
+    color: white;
+}
+
+.caja__texto input, textarea{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: #00000000;
+}
+
+
+
+.grid-1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+label {
+    color: white;
+}
+@media (min-width: 768px){
+    .grid-1{
+        grid-template-columns: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mensaje {
+        grid-column: 1 / 3;
+    }
+}
+
+.formulario {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.imagen__gif {
+    background-image: url(../img/gif2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.u-boton {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .u-boton {
+        width: 50%;
+    }
+}
+
+.centrar-texto__1 {
+    text-align: center;
+    color: white;
+}
+
+.contenido__quienes {
+    background-image: url(../img/tur2.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+}
+.no-margin {
+    margin: 0;
+}
+
+.contenido__info {            
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    text-align: center;
+    padding: 15px 45px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 100%;
+}
+
+.f-15 {
+    font-size: 80px;
+}
+
+@media (min-width: 568px ){
+    .contenido__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px){
+    .contenido__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mapa {
+    grid-column: 1 / 3;
+}
+
+.informacion {
+    grid-column: 1 / 3;
+}
+
+}
+
+
+.bg-grad {
+    background-image: url(../img/imagen_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.right {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.bordes {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.titulo {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.bg-black {
+    background-image: url(../img/peru.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.vh-50 {
+    height: 80vh;
+}
+
+video {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+/* Carrito de compras */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-carrito h2 {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.flex-tabla {
+    flex: 0 0 calc(50% - 1.5rem);
+}
+
+.flex-descripcion {
+    flex: 0 0 calc(50% - 1.5rem);
+}
+
+.flex-imagen{
+    flex: 0 0 calc(50% - 1.5rem);
+    width: 100%;
+    text-align: center;
+}
+
+.flex-imagen img {
+    width: 500px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.descripcion {
+    padding: 0 25px;
+}
+
+.derecha-flex {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 170px;
+}
+
+
+.image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 300px;
+    height: 300px;
+}
+
+.image h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.logo {
+    display: flex;
+}
+
+.enlace {
+    margin: 10px 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background-image: url(../img/img2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.option {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.flex-impacto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-impacto--caja {
+    flex: 0 0 50% ;
+}
+
+.flex-impacto img {
+    width: 100%;
+    height: 50vh;
+}
+
+.text-contain span {
+    color: rgb(192, 29, 29);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.caja-text {
+    overflow: hidden;
+    width: 100%;
+}
+
+.titulo-h3 {
+    text-decoration: underline;
+    color: rgb(192, 10, 10);
+}
