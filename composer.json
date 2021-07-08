@@ -1,0 +1,19 @@
+{
+    "name": "miguel/bienes-raices-php_inicio",
+    "description": "Creando un proyecto",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Miguel Pretell",
+            "email": "migpretellp@uch.pe"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.5"
+    },
+    "autoload":{
+        "psr-4":{
+            "App\\": "./classes"
+        }
+    }
+}
